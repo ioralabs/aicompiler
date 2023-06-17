@@ -1,0 +1,26 @@
+{
+  "name": "aicompiler",
+  "version": "1.0.1",
+  "description": "A Command Line Interface (CLI) tool designed to interact with OpenAI's GPT-3 for code generation. This tool scans project directories, respects .gitignore rules, and sends the structure and content of the project to GPT-3 to generate code based on user story inputs. Can be used for continuous monitoring and requesting solutions for new user stories.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "codegpt": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ioralabs/aicompiler.git"
+  },
+  "author": "Pedro Magalhaes",
+  "company": "Iora Labs",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.3.0",
+    "fs": "^0.0.1-security",
+    "ignore": "^5.2.4",
+    "openai": "^3.3.0",
+    "yargs": "^17.7.2"
+  }
+}
